@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|d:\\c#\\facial-recognition-system-in-csharp-main\\facial-recognition-system-in-csharp-main\\facialrecognitionsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|d:\\c#\\facial-recognition-system-in-csharp-main\\facial-recognition-system-in-csharp-main\\facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|d:\\c#\\facial-recognition-system-in-csharp-main\\facial-recognition-system-in-csharp-main\\facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FaceRecognition.cs",
+              "DocumentMoniker": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\FaceRecognition.cs",
+              "ToolTip": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
+              "RelativeToolTip": "FacialRecognitionSystem\\FaceRecognition.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswHYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T12:49:06.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FaceRecognition.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\FaceRecognition.cs",
+              "ToolTip": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs [Design]",
+              "RelativeToolTip": "FacialRecognitionSystem\\FaceRecognition.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T12:49:03.694Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\Form1.Designer.cs",
+              "ToolTip": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form1.Designer.cs",
+              "RelativeToolTip": "FacialRecognitionSystem\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T11:59:27.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\Form1.cs",
+              "ToolTip": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form1.cs [Design]",
+              "RelativeToolTip": "FacialRecognitionSystem\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T12:01:44.503Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\Form2.cs",
+              "ToolTip": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs*",
+              "RelativeToolTip": "FacialRecognitionSystem\\Form2.cs*",
+              "ViewState": "AgIAADQAAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T11:50:41.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\Form2.cs",
+              "ToolTip": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs [Design]*",
+              "RelativeToolTip": "FacialRecognitionSystem\\Form2.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T11:46:15.065Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\Form1.cs",
+              "ToolTip": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form1.cs",
+              "RelativeToolTip": "FacialRecognitionSystem\\Form1.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T10:42:51.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Program.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\Program.cs",
+              "ToolTip": "D:\\C#\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Program.cs",
+              "RelativeToolTip": "FacialRecognitionSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T10:41:44.488Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

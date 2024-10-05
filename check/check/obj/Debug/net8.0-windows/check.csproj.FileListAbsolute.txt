@@ -1,0 +1,108 @@
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\check.exe
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\check.deps.json
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\check.runtimeconfig.json
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\check.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\check.pdb
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\AWSSDK.Core.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\AWSSDK.SecurityToken.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\DnsClient.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\MongoDB.Bson.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\MongoDB.Driver.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\MongoDB.Driver.Core.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\MongoDB.Libmongocrypt.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\SharpCompress.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\Snappier.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\ZstdSharp.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\runtimes\linux\native\libmongocrypt.so
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\runtimes\osx\native\libmongocrypt.dylib
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\bin\Debug\net8.0-windows\runtimes\win\native\mongocrypt.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.csproj.AssemblyReference.cache
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.Form1.resources
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.csproj.GenerateResource.cache
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.GeneratedMSBuildEditorConfig.editorconfig
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.AssemblyInfoInputs.cache
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.AssemblyInfo.cs
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.csproj.CoreCompileInputs.cache
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.csproj.Up2Date
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\refint\check.dll
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.pdb
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\check.genruntimeconfig.cache
+D:\data\Xuan Dao\TDTU\Năm 3\HK1\CNPM\check\check\obj\Debug\net8.0-windows\ref\check.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\check.exe
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\check.deps.json
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\check.runtimeconfig.json
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\check.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\check.pdb
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\AWSSDK.Core.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\AWSSDK.SecurityToken.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\DnsClient.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\MongoDB.Bson.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\MongoDB.Driver.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\MongoDB.Driver.Core.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\MongoDB.Libmongocrypt.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\SharpCompress.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\Snappier.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\runtimes\linux\native\libmongocrypt.so
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\runtimes\win\native\mongocrypt.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.csproj.AssemblyReference.cache
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.Form1.resources
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.Form2.resources
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.csproj.GenerateResource.cache
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.AssemblyInfoInputs.cache
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.AssemblyInfo.cs
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.csproj.CoreCompileInputs.cache
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.csproj.Up2Date
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\refint\check.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.pdb
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.genruntimeconfig.cache
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\ref\check.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\AForge.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\AForge.Video.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\bin\Debug\net8.0-windows\AForge.Video.DirectShow.dll
+C:\Users\acer\Documents\Zalo Received Files\check\check\obj\Debug\net8.0-windows\check.Form3.resources
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\check.exe
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\check.deps.json
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\check.runtimeconfig.json
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\check.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\check.pdb
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\AForge.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\AForge.Video.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\AForge.Video.DirectShow.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\AWSSDK.Core.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\AWSSDK.SecurityToken.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\DnsClient.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\MongoDB.Bson.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\MongoDB.Driver.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\MongoDB.Driver.Core.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\MongoDB.Libmongocrypt.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\SharpCompress.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\Snappier.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\ZstdSharp.dll
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\runtimes\linux\native\libmongocrypt.so
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\runtimes\osx\native\libmongocrypt.dylib
+D:\C#\midterm\check\check\bin\Debug\net8.0-windows\runtimes\win\native\mongocrypt.dll
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.csproj.AssemblyReference.cache
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.Form1.resources
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.Form2.resources
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.Form3.resources
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.csproj.GenerateResource.cache
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.AssemblyInfoInputs.cache
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.AssemblyInfo.cs
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.csproj.CoreCompileInputs.cache
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.csproj.Up2Date
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.dll
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\refint\check.dll
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.pdb
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\check.genruntimeconfig.cache
+D:\C#\midterm\check\check\obj\Debug\net8.0-windows\ref\check.dll
