@@ -9,7 +9,6 @@ namespace check
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public ObjectId Id { get; set; }
-        public ObjectId teacherid { get; set; }
 
         public string className { get; set; }
     }

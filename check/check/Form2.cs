@@ -47,8 +47,13 @@ namespace check
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
-    class MongoHelper { 
+    public class MongoHelper { 
         public static IMongoClient  client { get; set; }
         public static IMongoDatabase database { get; set; }
 
@@ -64,6 +69,12 @@ namespace check
             } catch (Exception ex) {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        internal static void DisConnectToMongoService()
+        {
+            client = null;
+            database = null;
         }
     }
 }

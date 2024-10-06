@@ -36,6 +36,7 @@ namespace check
             {
                 videoCaptureDevice.Stop();
             }
+            Application.Exit();
         }
 
         private void Form3_Load_1(object sender, EventArgs e)
@@ -47,6 +48,10 @@ namespace check
             }
             comboBox1.SelectedIndex = 0;
             videoCaptureDevice = new VideoCaptureDevice();
+
+
         }
+
+
     }
 }

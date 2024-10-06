@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\midterm\\check\\check\\check.csproj": {}
+    "D:\\App\\FaceRec\\check\\check\\check.csproj": {}
   },
   "projects": {
-    "D:\\C#\\midterm\\check\\check\\check.csproj": {
+    "D:\\App\\FaceRec\\check\\check\\check.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\midterm\\check\\check\\check.csproj",
+        "projectUniqueName": "D:\\App\\FaceRec\\check\\check\\check.csproj",
         "projectName": "check",
-        "projectPath": "D:\\C#\\midterm\\check\\check\\check.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\midterm\\check\\check\\obj\\",
+        "projectPath": "D:\\App\\FaceRec\\check\\check\\check.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\App\\FaceRec\\check\\check\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

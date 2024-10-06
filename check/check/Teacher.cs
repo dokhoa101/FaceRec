@@ -13,6 +13,6 @@ namespace check
         public string email { get; set; }
         public string phone { get; set; }
         public string password { get; set; }
-        public object classid { get; set; }
+        public List<ObjectId> classids { get; set; }
     }
 }

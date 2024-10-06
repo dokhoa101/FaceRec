@@ -33,17 +33,28 @@
             danhSáchSinhViênToolStripMenuItem = new ToolStripMenuItem();
             điểmDanhToolStripMenuItem = new ToolStripMenuItem();
             đăngXuấtToolStripMenuItem = new ToolStripMenuItem();
-            dataGridView1 = new DataGridView();
+            thốngKêToolStripMenuItem = new ToolStripMenuItem();
             dateTimePicker1 = new DateTimePicker();
+            dataGridView1 = new DataGridView();
             label1 = new Label();
-            panel2 = new Panel();
-            label2 = new Label();
-            comboBox1 = new ComboBox();
             getStudent = new Button();
+            comboBox1 = new ComboBox();
+            label2 = new Label();
+            button1 = new Button();
+            panel_Body = new Panel();
+            panel_thongke = new Panel();
+            button2 = new Button();
+            label3 = new Label();
+            comboBox2 = new ComboBox();
+            button3 = new Button();
+            label4 = new Label();
+            dataGridView2 = new DataGridView();
             panel1.SuspendLayout();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel2.SuspendLayout();
+            panel_Body.SuspendLayout();
+            panel_thongke.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -58,7 +69,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { danhSáchSinhViênToolStripMenuItem, điểmDanhToolStripMenuItem, đăngXuấtToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { danhSáchSinhViênToolStripMenuItem, điểmDanhToolStripMenuItem, đăngXuấtToolStripMenuItem, thốngKêToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -86,14 +97,12 @@
             đăngXuấtToolStripMenuItem.Size = new Size(73, 20);
             đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             // 
-            // dataGridView1
+            // thốngKêToolStripMenuItem
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 35);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(800, 384);
-            dataGridView1.TabIndex = 1;
+            thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
+            thốngKêToolStripMenuItem.Size = new Size(68, 20);
+            thốngKêToolStripMenuItem.Text = "Thống kê";
+            thốngKêToolStripMenuItem.Click += thốngKêToolStripMenuItem_Click;
             // 
             // dateTimePicker1
             // 
@@ -102,6 +111,15 @@
             dateTimePicker1.Size = new Size(207, 23);
             dateTimePicker1.TabIndex = 2;
             dateTimePicker1.Value = new DateTime(2001, 1, 31, 0, 0, 0, 0);
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(0, 35);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(800, 384);
+            dataGridView1.TabIndex = 1;
             // 
             // label1
             // 
@@ -112,19 +130,23 @@
             label1.TabIndex = 3;
             label1.Text = "Thời gian";
             // 
-            // panel2
+            // getStudent
             // 
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(comboBox1);
-            panel2.Controls.Add(getStudent);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(dataGridView1);
-            panel2.Controls.Add(dateTimePicker1);
-            panel2.Location = new Point(0, 31);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(800, 421);
-            panel2.TabIndex = 4;
-            panel2.Visible = false;
+            getStudent.Location = new Point(648, 6);
+            getStudent.Name = "getStudent";
+            getStudent.Size = new Size(75, 23);
+            getStudent.TabIndex = 4;
+            getStudent.Text = "Hiển thị";
+            getStudent.UseVisualStyleBackColor = true;
+            getStudent.Click += getClick;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(392, 6);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(210, 23);
+            comboBox1.TabIndex = 5;
             // 
             // label2
             // 
@@ -135,23 +157,98 @@
             label2.TabIndex = 6;
             label2.Text = "Lớp";
             // 
-            // comboBox1
+            // button1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(392, 6);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(210, 23);
-            comboBox1.TabIndex = 5;
+            button1.Location = new Point(725, 6);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 7;
+            button1.Text = "In";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // getStudent
+            // panel_Body
             // 
-            getStudent.Location = new Point(722, 8);
-            getStudent.Name = "getStudent";
-            getStudent.Size = new Size(75, 23);
-            getStudent.TabIndex = 4;
-            getStudent.Text = "In";
-            getStudent.UseVisualStyleBackColor = true;
-            getStudent.Click += getClick;
+            panel_Body.Controls.Add(panel_thongke);
+            panel_Body.Controls.Add(button1);
+            panel_Body.Controls.Add(label2);
+            panel_Body.Controls.Add(comboBox1);
+            panel_Body.Controls.Add(getStudent);
+            panel_Body.Controls.Add(label1);
+            panel_Body.Controls.Add(dataGridView1);
+            panel_Body.Controls.Add(dateTimePicker1);
+            panel_Body.Location = new Point(0, 27);
+            panel_Body.Name = "panel_Body";
+            panel_Body.Size = new Size(800, 421);
+            panel_Body.TabIndex = 4;
+            panel_Body.Visible = false;
+            // 
+            // panel_thongke
+            // 
+            panel_thongke.Controls.Add(button2);
+            panel_thongke.Controls.Add(label3);
+            panel_thongke.Controls.Add(comboBox2);
+            panel_thongke.Controls.Add(button3);
+            panel_thongke.Controls.Add(label4);
+            panel_thongke.Controls.Add(dataGridView2);
+            panel_thongke.Location = new Point(0, 0);
+            panel_thongke.Name = "panel_thongke";
+            panel_thongke.Size = new Size(800, 421);
+            panel_thongke.TabIndex = 8;
+            panel_thongke.Visible = false;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(725, 6);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 7;
+            button2.Text = "In";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(346, 12);
+            label3.Name = "label3";
+            label3.Size = new Size(27, 15);
+            label3.TabIndex = 6;
+            label3.Text = "Lớp";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(392, 6);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(210, 23);
+            comboBox2.TabIndex = 5;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(648, 6);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 4;
+            button3.Text = "Hiển thị";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(12, 9);
+            label4.Name = "label4";
+            label4.Size = new Size(105, 15);
+            label4.TabIndex = 3;
+            label4.Text = "Danh sách cấm thi";
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(0, 35);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(800, 384);
+            dataGridView2.TabIndex = 1;
             // 
             // Form1
             // 
@@ -159,18 +256,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
-            Controls.Add(panel2);
+            Controls.Add(panel_Body);
             MainMenuStrip = menuStrip1;
             Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            panel_Body.ResumeLayout(false);
+            panel_Body.PerformLayout();
+            panel_thongke.ResumeLayout(false);
+            panel_thongke.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
         }
 
@@ -181,12 +283,21 @@
         private ToolStripMenuItem danhSáchSinhViênToolStripMenuItem;
         private ToolStripMenuItem điểmDanhToolStripMenuItem;
         private ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private DataGridView dataGridView1;
+        private ToolStripMenuItem thốngKêToolStripMenuItem;
         private DateTimePicker dateTimePicker1;
+        private DataGridView dataGridView1;
         private Label label1;
-        private Panel panel2;
         private Button getStudent;
-        private Label label2;
         private ComboBox comboBox1;
+        private Label label2;
+        private Button button1;
+        private Panel panel_Body;
+        private Panel panel_thongke;
+        private Button button2;
+        private Label label3;
+        private ComboBox comboBox2;
+        private Button button3;
+        private Label label4;
+        private DataGridView dataGridView2;
     }
 }

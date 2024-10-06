@@ -13,7 +13,7 @@ namespace check
         public string name { get; set; }
         public string picture { get; set; }
         public string MSSV { get; set; }
-        public object classId { get; set; }
+        public List<ObjectId> classId { get; set; }
         public DateTime birth { get; set; }
     }
 }

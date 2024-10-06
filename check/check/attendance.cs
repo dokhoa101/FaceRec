@@ -13,10 +13,16 @@ namespace check
         public ObjectId classId {  get; set; }
         
         public ObjectId teacherid { get; set; }
-        public string picture { get; set; }
 
         public DateTime createdat { get; set; }
 
-        public object report { get; set; }
+        public List<reportItem> report { get; set; }
+    }
+
+     class reportItem
+    {
+        public ObjectId studentid { get; set; }  
+        public string status { get; set; }  
+        public DateTime time { get; set; }
     }
 }

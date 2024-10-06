@@ -140,6 +140,7 @@
             Controls.Add(lb_name);
             Name = "Form2";
             Text = "Form2";
+            FormClosing += Form2_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
