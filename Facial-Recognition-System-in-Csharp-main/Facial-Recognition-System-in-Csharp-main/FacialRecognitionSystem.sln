@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacialRecognitionSystem", "FacialRecognitionSystem\FacialRecognitionSystem.csproj", "{888D4C35-CB16-4381-BC92-642C093C231D}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup2", "Setup2\Setup2.vdproj", "{54C72A90-0A30-4413-BA2F-61DF65C6858F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{888D4C35-CB16-4381-BC92-642C093C231D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{888D4C35-CB16-4381-BC92-642C093C231D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{888D4C35-CB16-4381-BC92-642C093C231D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C72A90-0A30-4413-BA2F-61DF65C6858F}.Debug|Any CPU.ActiveCfg = Debug
+		{54C72A90-0A30-4413-BA2F-61DF65C6858F}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

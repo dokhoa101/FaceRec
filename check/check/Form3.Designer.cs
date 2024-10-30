@@ -80,6 +80,7 @@
             btn_back.TabIndex = 4;
             btn_back.Text = "Quay lại";
             btn_back.UseVisualStyleBackColor = true;
+            btn_back.Click += btn_back_Click;
             // 
             // Form3
             // 

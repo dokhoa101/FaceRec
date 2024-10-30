@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.Dynamic;
 using System.ComponentModel;
+using System.Text;
 
 
 namespace check
@@ -19,6 +20,10 @@ namespace check
         private Teacher teacher;
         public Form1(Teacher teacher)
         {
+            atCollection = MongoHelper.database.GetCollection<attendance>("attendance");
+            stCollection = MongoHelper.database.GetCollection<student>("student");
+            clCollection = MongoHelper.database.GetCollection<Class>("class");
+            tcCollection = MongoHelper.database.GetCollection<Teacher>("teacher");
             InitializeComponent();
             MongoHelper.ConnectToMongoService();
             this.teacher = teacher;
@@ -26,37 +31,16 @@ namespace check
 
         private Form currentFormChild;
 
-        //private void OpenChildForm(Form childForm)
-        //{
-        //    if (currentFormChild != null)
-        //    {
-        //        currentFormChild.Close();
-        //    }
-        //    currentFormChild = childForm;
-        //    childForm.TopLevel = false;
-        //    childForm.FormBorderStyle = FormBorderStyle.None;
-        //    childForm.Dock = DockStyle.Fill;
-        //    panel_Body.Controls.Add(childForm);
-        //    panel_Body.Tag = childForm;
-        //    childForm.BringToFront();
-        //    childForm.Show();
-        //}
-
         private void ListStudent(object sender, EventArgs e)
         {
-            //OpenChildForm(new Danhsachsinhvien());
-
+            panel_themhs.Visible = false;
             panel_Body.Visible = true;
+            panel_thongke.Visible = false;
             listClassOfTeacher(sender, e);
         }
 
         private void getClick(object sender, EventArgs e)
         {
-            atCollection = MongoHelper.database.GetCollection<attendance>("attendance");
-            stCollection = MongoHelper.database.GetCollection<student>("student");
-            clCollection = MongoHelper.database.GetCollection<Class>("class");
-            tcCollection = MongoHelper.database.GetCollection<Teacher>("teacher");
-
             if (comboBox1.SelectedItem == null)
             {
                 MessageBox.Show("Please select a class.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -65,11 +49,6 @@ namespace check
 
             var selectedDate = dateTimePicker1.Value.Date;
             var className = comboBox1.SelectedItem.ToString();
-            //get class and date
-
-
-
-
 
             var selectedClass = clCollection.Find(x => x.className == className).FirstOrDefault();
             if (selectedClass == null)
@@ -89,16 +68,11 @@ namespace check
             var attendanceList = new System.Collections.Generic.List<object>();
 
             var attendance = atCollection.Find(filter).FirstOrDefault();
-
-
             if (attendance == null)
             {
                 MessageBox.Show("Không tìm thấy bản ghi điểm danh cho ngày đã chọn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-
-
-
             if (attendance != null && attendance.report != null)
             {
                 foreach (var item in attendance.report)
@@ -125,18 +99,12 @@ namespace check
                             Time = time.ToString("yyyy-MM-dd HH:mm:ss")
                         });
                     }
-
-
-
                 }
-
             }
             else
             {
                 Console.WriteLine(" không có dữ liệu.");
             }
-
-
             dataGridView1.DataSource = attendanceList;
             dataGridView1.Refresh();
         }
@@ -145,20 +113,21 @@ namespace check
         {
             List<ObjectId> classIds = teacher.classids;
             var clCollection = MongoHelper.database.GetCollection<Class>("class");
-
-            //var classes = clCollection.Find(new BsonDocument()).ToList();
             var classes = clCollection.Find(x => classIds.Contains(x.Id)).ToList();
-
-
             if (classes.Any())
             {
+                class_id.Items.Clear();
                 comboBox1.Items.Clear();
+                comboBox2.Items.Clear();
                 foreach (var cl in classes)
                 {
+                    class_id.Items.Add(cl.className);
                     comboBox1.Items.Add(cl.className);
+                    comboBox2.Items.Add(cl.className);
                 }
-
+                class_id.Refresh();
                 comboBox1.Refresh();
+                comboBox2.Refresh();
             }
             else
             {
@@ -168,18 +137,8 @@ namespace check
 
         private void điểmDanhToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Form3().Show();
+            new Form3(teacher).Show();
             this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //export csv
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -188,17 +147,254 @@ namespace check
             Application.Exit();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            panel_themhs.Visible = false;
             panel_Body.Visible = false;
             panel_thongke.Visible = true;
+            listClassOfTeacher(sender, e);
         }
 
-        
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a class.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var className = comboBox2.SelectedItem.ToString();
+            var selectedClass = clCollection.Find(x => x.className == className).FirstOrDefault();
+
+            if (selectedClass == null)
+            {
+                MessageBox.Show("Không tìm thấy lớp", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var attendanceRecords = atCollection.Find(x => x.classId == selectedClass.Id).ToList();
+            Dictionary<ObjectId, int> studentAbsences = new Dictionary<ObjectId, int>();
+
+            var studentsInClass = stCollection.Find(x => x.classId.Contains(selectedClass.Id)).ToList();
+
+
+            foreach (var attendance in attendanceRecords)
+            {
+                if (attendance.report != null && attendance.report.Any())
+                {
+                    foreach (var item in attendance.report)
+                    {
+                        if (!studentAbsences.ContainsKey(item.studentid))
+                        {
+                            studentAbsences[item.studentid] = 0;
+                        }
+                        if (item.status == "Absent" || item.status == "")
+                        {
+                            studentAbsences[item.studentid]++;
+                        }
+                    }
+                }
+                else
+                {
+                    foreach (var student in studentsInClass)
+                    {
+                        if (!studentAbsences.ContainsKey(student.Id))
+                        {
+                            studentAbsences[student.Id] = 0;
+                        }
+                        studentAbsences[student.Id]++;
+                    }
+                }
+            }
+
+            var studentsWithAbsences = new List<object>();
+
+            foreach (var entry in studentAbsences)
+            {
+                if (entry.Value >= 3)
+                {
+                    var student = stCollection.Find(x => x.Id == entry.Key).FirstOrDefault();
+                    if (student != null)
+                    {
+                        studentsWithAbsences.Add(new
+                        {
+                            MSSV = student.MSSV,
+                            Name = student.name,
+                            Absences = entry.Value
+                        });
+                    }
+                }
+            }
+
+            if (studentsWithAbsences.Count > 0)
+            {
+                dataGridView2.DataSource = studentsWithAbsences.ToList();
+            }
+            else
+            {
+                MessageBox.Show("Không có sinh viên nào vắng mặt quá 3 buổi.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dataGridView2.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu để xuất ra file.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            var csvLines = new List<string>();
+
+            var headers = dataGridView2.Columns.Cast<DataGridViewColumn>();
+            csvLines.Add(string.Join(",", headers.Select(column => "\"" + column.HeaderText + "\"")));
+
+            foreach (DataGridViewRow row in dataGridView2.Rows)
+            {
+                if (!row.IsNewRow) // Bỏ qua hàng mới
+                {
+                    var cells = row.Cells.Cast<DataGridViewCell>();
+                    csvLines.Add(string.Join(",", cells.Select(cell => "\"" + (cell.Value?.ToString() ?? "") + "\"")));
+                }
+            }
+            using (var saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "CSV file (*.csv)|*.csv";
+                saveFileDialog.FileName = "attendance_report.csv";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Ghi dữ liệu vào tệp CSV với mã hóa UTF-8 có BOM
+                    System.IO.File.WriteAllLines(saveFileDialog.FileName, csvLines, Encoding.UTF8);
+
+                    using (var streamWriter = new StreamWriter(saveFileDialog.FileName, false, new UTF8Encoding(true)))
+                    {
+                        streamWriter.WriteLine(string.Join(Environment.NewLine, csvLines));
+                    }
+
+                    MessageBox.Show("Xuất file thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu để xuất ra file.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            var csvLines = new List<string>();
+
+            var headers = dataGridView1.Columns.Cast<DataGridViewColumn>();
+            csvLines.Add(string.Join(",", headers.Select(column => "\"" + column.HeaderText + "\"")));
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    var cells = row.Cells.Cast<DataGridViewCell>();
+                    csvLines.Add(string.Join(",", cells.Select(cell => "\"" + (cell.Value?.ToString() ?? "") + "\"")));
+                }
+            }
+            using (var saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "CSV file (*.csv)|*.csv";
+                saveFileDialog.FileName = "attendance_report.csv";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Ghi dữ liệu vào tệp CSV với mã hóa UTF-8 có BOM
+                    System.IO.File.WriteAllLines(saveFileDialog.FileName, csvLines, Encoding.UTF8);
+
+                    using (var streamWriter = new StreamWriter(saveFileDialog.FileName, false, new UTF8Encoding(true)))
+                    {
+                        streamWriter.WriteLine(string.Join(Environment.NewLine, csvLines));
+                    }
+
+                    MessageBox.Show("Xuất file thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void thêmHọcSinhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel_Body.Visible = false;
+            panel_themhs.Visible = false;
+            panel_themhs.Visible = true;
+            listClassOfTeacher(sender, e);
+        }
+        private void addStudent(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(text_add_name.Text) || string.IsNullOrEmpty(txt_mssv.Text) || string.IsNullOrEmpty(txt_link.Text) || class_id.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            try
+            {
+                if (stCollection == null || clCollection == null)
+                {
+                    MessageBox.Show("Không thể kết nối tới cơ sở dữ liệu", "Lỗi",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                var Id = ObjectId.GenerateNewId();
+                var name = text_add_name.Text;
+                var MSSV = txt_mssv.Text;
+                var existingStudent = stCollection.Find(x => x.MSSV == MSSV).FirstOrDefault();
+                if (existingStudent != null)
+                {
+                    MessageBox.Show("Mã số sinh viên đã tồn tại", "Thông báo",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var birth = dateTimePicker2.Value;
+                var picture = txt_link.Text;
+                var classId = new System.Collections.Generic.List<ObjectId>();
+                if (class_id.SelectedItem != null)
+                {
+                    var classObj = clCollection
+                        .Find(x => x.className == class_id.SelectedItem.ToString())
+                        .FirstOrDefault();
+
+                    if (classObj != null)
+                    {
+                        classId.Add(classObj.Id);
+                    }
+                }
+                var student_add = new student
+                {
+                    Id = Id,
+                    name = name,
+                    MSSV = MSSV,
+                    birth = birth,
+                    picture = picture,
+                    classId = classId
+                };
+                stCollection.InsertOne(student_add);
+                MessageBox.Show("Thêm học sinh thành công", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm học sinh: " + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            addStudent(sender, e);
+        }
     }
 }

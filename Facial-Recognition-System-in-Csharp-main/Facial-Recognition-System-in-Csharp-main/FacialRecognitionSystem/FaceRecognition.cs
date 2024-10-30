@@ -5,17 +5,22 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
+using check;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Face;
 using Emgu.CV.Structure;
+using FacialRecognitionSystem;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FaceRecognition
 {
-    public class FaceRec : Form
+    internal class FaceRec : Form
     {
-        private double distance = 1E+19;
+        //private double distance = 1E+19;
+        private double distance = 5000;
 
         private CascadeClassifier CascadeClassifier = new CascadeClassifier(Environment.CurrentDirectory + "/Haarcascade/haarcascade_frontalface_alt.xml");
 
@@ -47,6 +52,12 @@ namespace FaceRecognition
 
         private IContainer components = null;
 
+        private DateTime timeRec; 
+
+        public static Dictionary<string, DateTime> attendancesList = new Dictionary<string, DateTime>();
+
+        public List<reportItem> reportData = new List<reportItem>();
+
         public FaceRec()
         {
             InitializeComponent();
@@ -56,7 +67,7 @@ namespace FaceRecognition
             }
         }
 
-        public void getPersonName(Control control)
+        public void getPersonName(Control label)
         {
             Timer timer = new Timer();
             timer.Tick += timer_getPersonName_Tick;
@@ -64,7 +75,7 @@ namespace FaceRecognition
             timer.Start();
             void timer_getPersonName_Tick(object sender, EventArgs e)
             {
-                control.Text = setPersonName;
+                label.Text = setPersonName ;
             }
         }
 
@@ -91,13 +102,34 @@ namespace FaceRecognition
             PictureBox_Frame.Image = Frame.Bitmap;
         }
 
+        private void TrainFromFolder(Image<Bgr, byte> inputImage)
+        {
+            Frame = inputImage;
+            isEnable_SaveImage = true;
+
+            detectFace();
+
+
+        }
+
+        public void UpdateTextBox()
+        {
+            Form2.txtbox.Clear();
+            foreach (var user in attendancesList)
+            {
+                Form2.txtbox.AppendText($"Student: {user.Key}, Time: {user.Value.ToString("dd/MM/yyyy hh:mm:ss tt")}");
+
+            }
+
+        }
+
         private void detectFace()
         {
             Image<Bgr, byte> image = Frame.Convert<Bgr, byte>();
             Mat mat = new Mat();
             CvInvoke.CvtColor(Frame, mat, ColorConversion.Bgr2Gray);
             CvInvoke.EqualizeHist(mat, mat);
-            Rectangle[] array = CascadeClassifier.DetectMultiScale(mat, 1.1, 4);
+            Rectangle[] array = CascadeClassifier.DetectMultiScale(mat, 1.01, 4);
             if (array.Length != 0)
             {
                 Rectangle[] array2 = array;
@@ -167,7 +199,21 @@ namespace FaceRecognition
                     if (predictionResult.Label != -1 && predictionResult.Distance < distance)
                     {
                         PictureBox_smallFrame.Image = trainedFaces[predictionResult.Label].Bitmap;
+
+
                         setPersonName = Names[predictionResult.Label].Replace(Environment.CurrentDirectory + "\\Image\\", "").Replace(".jpg", "");
+                        timeRec = DateTime.Now;
+
+                        if (!attendancesList.ContainsKey(setPersonName))
+                        {
+                            attendancesList[setPersonName] = timeRec;
+                            UpdateTextBox();
+                            Form2.UpdateData();
+                        }
+
+
+
+
                         CvInvoke.PutText(Frame, setPersonName, new Point(face.X - 2, face.Y - 2), FontFace.HersheyPlain, 1.0, new Bgr(Color.LimeGreen).MCvScalar);
                     }
                     else
@@ -188,6 +234,24 @@ namespace FaceRecognition
                 components.Dispose();
             }
 
+            if (camera != null)
+            {
+                camera.Stop();
+                camera.Dispose(); 
+                camera = null;
+                
+                
+                
+               
+
+
+            }
+            isTrained = false;
+            isEnable_SaveImage = false; 
+            attendancesList.Clear();
+            PictureBox_smallFrame.Image = null;
+            PictureBox_Frame.Image = null;
+
             base.Dispose(disposing);
         }
 
@@ -200,6 +264,44 @@ namespace FaceRecognition
             base.Name = "FaceRec";
             this.Text = "FaceRec";
             base.ResumeLayout(false);
+        }
+
+        public void SelectAndProcessImages()
+        {
+            using (FolderBrowserDialog folderDialog = new FolderBrowserDialog())
+            {
+                // Hiển thị hộp thoại chọn thư mục
+                if (folderDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string selectedFolder = folderDialog.SelectedPath;
+                    MessageBox.Show($"Bạn đã chọn thư mục: {selectedFolder}");
+
+                    // Đọc tất cả các file hình ảnh trong thư mục
+                    ProcessImagesInFolder(selectedFolder);
+                }
+            }
+        }
+
+        private void ProcessImagesInFolder(string folderPath)
+        {
+            string[] imageFiles = Directory.GetFiles(folderPath, "*.*", SearchOption.TopDirectoryOnly)
+                                            .Where(f => f.EndsWith(".jpg") || f.EndsWith(".jpeg")
+                                                     || f.EndsWith(".png") || f.EndsWith(".bmp")
+                                                     || f.EndsWith(".gif"))
+                                            .ToArray();
+
+            foreach (string imageFile in imageFiles)
+            {
+                Image<Bgr, byte> image = new Image<Bgr, byte>(imageFile);
+                ImageName = Path.GetFileNameWithoutExtension(imageFile);
+
+                MessageBox.Show($"Đang xử lý hình ảnh: {ImageName}");
+                MessageBox.Show(Environment.CurrentDirectory);
+
+
+                TrainFromFolder(image);
+            }
+
         }
     }
 

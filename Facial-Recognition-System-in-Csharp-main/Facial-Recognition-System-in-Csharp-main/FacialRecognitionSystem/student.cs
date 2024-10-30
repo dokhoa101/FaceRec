@@ -1,0 +1,21 @@
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Driver;
+using System.Collections.Generic;
+using System;
+
+
+namespace check
+{
+    internal class student
+    {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId Id { get; set; }
+        public string name { get; set; }
+        public string picture { get; set; }
+        public string MSSV { get; set; }
+        public List<ObjectId> classId { get; set; }
+        public DateTime birth { get; set; }
+    }
+}

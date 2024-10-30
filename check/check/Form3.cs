@@ -11,13 +11,16 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 namespace check
 {
-    public partial class Form3 : Form
+    internal partial class Form3 : Form
     {
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice videoCaptureDevice;
-        public Form3()
+
+        private Teacher Teacher;
+        public Form3(Teacher teacher)
         {
             InitializeComponent();
+            this.Teacher = teacher;
         }
 
         private void btn_start_Click(object sender, EventArgs e)
@@ -32,7 +35,7 @@ namespace check
         }
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(videoCaptureDevice.IsRunning == true)
+            if (videoCaptureDevice.IsRunning == true)
             {
                 videoCaptureDevice.Stop();
             }
@@ -52,6 +55,10 @@ namespace check
 
         }
 
-
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Form1(Teacher).Show();
+        }
     }
 }
