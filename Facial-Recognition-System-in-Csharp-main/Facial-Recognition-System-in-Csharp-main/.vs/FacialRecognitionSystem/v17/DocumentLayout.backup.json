@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|d:\\c#\\midterm\\facerec\\facial-recognition-system-in-csharp-main\\facial-recognition-system-in-csharp-main\\facialrecognitionsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|d:\\c#\\midterm\\facerec\\facial-recognition-system-in-csharp-main\\facial-recognition-system-in-csharp-main\\facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|solutionrelative:facialrecognitionsystem\\facerecognition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{888D4C35-CB16-4381-BC92-642C093C231D}|FacialRecognitionSystem\\FacialRecognitionSystem.csproj|D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\facialrecognitionsystem\\haarcascade\\haarcascade_frontalface_alt.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,28 +78,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FaceRecognition.cs",
-              "DocumentMoniker": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
-              "RelativeDocumentMoniker": "FacialRecognitionSystem\\FaceRecognition.cs",
-              "ToolTip": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
-              "RelativeToolTip": "FacialRecognitionSystem\\FaceRecognition.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAcwCQBAAA0AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\Form2.cs",
+              "ToolTip": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs",
+              "RelativeToolTip": "FacialRecognitionSystem\\Form2.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAADwv5IAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:10:20.451Z",
+              "WhenOpened": "2024-10-04T11:50:41.408Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FaceRecognition.cs [Design]",
-              "DocumentMoniker": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
-              "RelativeDocumentMoniker": "FacialRecognitionSystem\\FaceRecognition.cs",
-              "ToolTip": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs [Design]",
-              "RelativeToolTip": "FacialRecognitionSystem\\FaceRecognition.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:07:01.753Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -107,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs",
               "RelativeDocumentMoniker": "FacialRecognitionSystem\\Form2.cs",
@@ -116,6 +104,29 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T11:46:15.065Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FaceRecognition.cs",
+              "DocumentMoniker": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\FaceRecognition.cs",
+              "ToolTip": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
+              "RelativeToolTip": "FacialRecognitionSystem\\FaceRecognition.cs",
+              "ViewState": "AgIAADQBAAAAAAAAAAAAACQBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T15:10:20.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FaceRecognition.cs [Design]",
+              "DocumentMoniker": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs",
+              "RelativeDocumentMoniker": "FacialRecognitionSystem\\FaceRecognition.cs",
+              "ToolTip": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\FaceRecognition.cs [Design]",
+              "RelativeToolTip": "FacialRecognitionSystem\\FaceRecognition.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T05:07:01.753Z"
             },
             {
               "$type": "Document",
@@ -162,8 +173,7 @@
               "RelativeToolTip": "FacialRecognitionSystem\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-27T15:54:45.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T15:54:45.3Z"
             },
             {
               "$type": "Document",
@@ -175,21 +185,7 @@
               "RelativeToolTip": "FacialRecognitionSystem\\Form2.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAANEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T15:30:50.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs",
-              "RelativeDocumentMoniker": "FacialRecognitionSystem\\Form2.cs",
-              "ToolTip": "D:\\C#\\midterm\\FaceRec\\Facial-Recognition-System-in-Csharp-main\\Facial-Recognition-System-in-Csharp-main\\FacialRecognitionSystem\\Form2.cs",
-              "RelativeToolTip": "FacialRecognitionSystem\\Form2.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwF4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:50:41.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T15:30:50.989Z"
             },
             {
               "$type": "Document",

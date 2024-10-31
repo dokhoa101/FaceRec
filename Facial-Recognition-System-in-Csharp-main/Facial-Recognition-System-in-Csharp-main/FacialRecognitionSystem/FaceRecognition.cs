@@ -129,7 +129,7 @@ namespace FaceRecognition
             Mat mat = new Mat();
             CvInvoke.CvtColor(Frame, mat, ColorConversion.Bgr2Gray);
             CvInvoke.EqualizeHist(mat, mat);
-            Rectangle[] array = CascadeClassifier.DetectMultiScale(mat, 1.01, 4);
+            Rectangle[] array = CascadeClassifier.DetectMultiScale(mat, 1.01, 5);
             if (array.Length != 0)
             {
                 Rectangle[] array2 = array;

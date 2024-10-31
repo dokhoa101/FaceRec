@@ -147,3 +147,4 @@ D:\C#\midterm\FaceRec\Facial-Recognition-System-in-Csharp-main\Facial-Recognitio
 D:\C#\midterm\FaceRec\Facial-Recognition-System-in-Csharp-main\Facial-Recognition-System-in-Csharp-main\FacialRecognitionSystem\obj\Debug\FacialRecognitionSystem.exe.manifest
 D:\C#\midterm\FaceRec\Facial-Recognition-System-in-Csharp-main\Facial-Recognition-System-in-Csharp-main\FacialRecognitionSystem\obj\Debug\FacialRecognitionSystem.application
 D:\C#\midterm\FaceRec\Facial-Recognition-System-in-Csharp-main\Facial-Recognition-System-in-Csharp-main\FacialRecognitionSystem\bin\Debug\Haarcascade\haarcascade_frontalface_alt.xml
+D:\C#\midterm\FaceRec\Facial-Recognition-System-in-Csharp-main\Facial-Recognition-System-in-Csharp-main\FacialRecognitionSystem\bin\Debug\System.ComponentModel.Composition.dll

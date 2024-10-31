@@ -97,7 +97,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>x3lbADoKZIcXLsW4kwdBfWfhzxElk5dCf2hKD+r0ds8=</dsig:DigestValue>
+        <dsig:DigestValue>VJdogaLqyAEvHpqu3CFRbCPG2UrirD8gI/vQiffSf54=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -494,13 +494,13 @@
       <dsig:DigestValue>MucUhCkLjimc+fxPFuycOGumsoVwA/FdoVaus73nTxk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Haarcascade\haarcascade_frontalface_alt.xml" size="676709" writeableType="applicationData">
+  <file name="Haarcascade\haarcascade_frontalface_alt.xml" size="701059" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YoHfE0Wcwhj/BH0Csq44WbEv8UqT/+iVL3sz+te5aXs=</dsig:DigestValue>
+      <dsig:DigestValue>aTZv7cMN6MvUAzZMdDAcE5DtwNxflysGaGosAJVI3Rs=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
